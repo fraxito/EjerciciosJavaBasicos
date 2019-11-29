@@ -71,6 +71,19 @@ public class EjerciciosBasicosJava {
         return false;
     }
     
+    //ejercicio 6
+    
+    public boolean digitoIgual (int a , int b){
+        int aIzq = a / 10;
+        int aDer = a % 10;
+        int bIzq = b / 10;
+        int bDer = b % 10;
+        if (aIzq == bIzq  || aIzq == bDer || aDer == bIzq || aDer == bDer){
+            return true;
+        }
+        return false;
+    } 
+    
     
     /**
      * @param args the command line arguments
@@ -96,7 +109,10 @@ public class EjerciciosBasicosJava {
         System.out.println("menorPor10 (1, 7, 11) " + ejercicios.menorPor10(1, 7, 11) );
         System.out.println("menorPor10 (1, 7, 10) " + ejercicios.menorPor10(1, 7, 10) );
         System.out.println("menorPor10 (11, 1, 7) " + ejercicios.menorPor10(11, 1, 7) );
-        
+            // testeo el ejercicio 6
+        System.out.println("digitoIgual (12, 23) " + ejercicios.digitoIgual(12, 23) ); 
+        System.out.println("digitoIgual (12, 43) " + ejercicios.digitoIgual(12, 43) );
+        System.out.println("digitoIgual (12, 44) " + ejercicios.digitoIgual(12, 44) );
     }
     
 } 
