@@ -39,6 +39,29 @@ public class EjerciciosBasicosJava {
         // return (numero % 11 == 0 || numero % 11 == 1);
     }
     
+    //ejercicio 04
+    public boolean contesta ( boolean matinal, boolean madre, boolean dormido){
+        if (dormido){
+            return false;
+        }
+        if (matinal && madre){
+            return true;
+        }
+        if (matinal){
+            return false;
+        }
+        return true;
+        
+        /*   otra solución más corta
+        if (dormido){
+            return false;
+        }
+        if (matinal && !madre){
+            return false;
+        }
+        return true;
+        */
+    }
     
     
     
@@ -60,4 +83,4 @@ public class EjerciciosBasicosJava {
         System.out.println("muyVanidoso (24) " + ejercicios.muyVanidoso(24) );
     }
     
-}
+} 
