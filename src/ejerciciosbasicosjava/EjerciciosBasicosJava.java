@@ -64,6 +64,10 @@ public class EjerciciosBasicosJava {
     }
     
     
+    public boolean menorPor10 (int a, int b, int c){
+        
+    }
+    
     
     /**
      * @param args the command line arguments
@@ -81,6 +85,10 @@ public class EjerciciosBasicosJava {
         System.out.println("muyVanidoso (22) " + ejercicios.muyVanidoso(22) );
         System.out.println("muyVanidoso (23) " + ejercicios.muyVanidoso(23) );
         System.out.println("muyVanidoso (24) " + ejercicios.muyVanidoso(24) );
+           // testeo el ejercicio 4
+        System.out.println("contesta (falso, falso, falso) " + ejercicios.contesta(false, false, false) );
+        System.out.println("contesta (falso, falso, true) " + ejercicios.contesta(false, false, true) );
+        System.out.println("contesta (true, falso, falso) " + ejercicios.contesta(true, false, false) );
     }
     
 } 
