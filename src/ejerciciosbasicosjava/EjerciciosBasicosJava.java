@@ -65,7 +65,10 @@ public class EjerciciosBasicosJava {
     
     
     public boolean menorPor10 (int a, int b, int c){
-        
+        if (Math.abs(a-b) >= 10  || Math.abs(a-c) >= 10 || Math.abs(b-c) >= 10 ){
+            return true;
+        }
+        return false;
     }
     
     
@@ -89,6 +92,11 @@ public class EjerciciosBasicosJava {
         System.out.println("contesta (falso, falso, falso) " + ejercicios.contesta(false, false, false) );
         System.out.println("contesta (falso, falso, true) " + ejercicios.contesta(false, false, true) );
         System.out.println("contesta (true, falso, falso) " + ejercicios.contesta(true, false, false) );
+            // testeo el ejercicio 5
+        System.out.println("menorPor10 (1, 7, 11) " + ejercicios.menorPor10(1, 7, 11) );
+        System.out.println("menorPor10 (1, 7, 10) " + ejercicios.menorPor10(1, 7, 10) );
+        System.out.println("menorPor10 (11, 1, 7) " + ejercicios.menorPor10(11, 1, 7) );
+        
     }
     
 } 
