@@ -84,6 +84,19 @@ public class EjerciciosBasicosJava {
         return false;
     } 
     
+    // ejercicio 7
+    public boolean multiploMultiple(int numero){
+        if (numero % 3 == 0 && numero % 5 == 0){ //el número es múltiplo de 3 Y de 5
+            return false;
+        }
+        if (numero % 3 == 0 || numero % 5 == 0){ //el número es múltiplo de 3 ó
+                                                 //de 5 pero no de los dos, porque si fuera de los dos se habría salido ya en el anterior if
+            return true;
+        }
+        return false;
+    }
+    
+    
     
     /**
      * @param args the command line arguments
@@ -113,6 +126,12 @@ public class EjerciciosBasicosJava {
         System.out.println("digitoIgual (12, 23) " + ejercicios.digitoIgual(12, 23) ); 
         System.out.println("digitoIgual (12, 43) " + ejercicios.digitoIgual(12, 43) );
         System.out.println("digitoIgual (12, 44) " + ejercicios.digitoIgual(12, 44) );
+            //testeo el ejercicio 7
+        System.out.println("multiploMultiple (3) " + ejercicios.multiploMultiple(3) );     
+        System.out.println("multiploMultiple (10) " + ejercicios.multiploMultiple(10) );
+        System.out.println("multiploMultiple (15) " + ejercicios.multiploMultiple(15) );
+    
+    
     }
     
 } 
